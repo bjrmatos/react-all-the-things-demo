@@ -1,0 +1,31 @@
+{
+  "name": "react-all-the-things-demo",
+  "version": "1.0.0",
+  "description": "Pequeña y simple demo para el 1er React.js Meetup - Lima",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjrmatos/react-all-the-things-demo.git"
+  },
+  "author": "BJR Matos <bjrmatos@gmail.com> (http://github.com/bjrmatos)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjrmatos/react-all-the-things-demo/issues"
+  },
+  "homepage": "https://github.com/bjrmatos/react-all-the-things-demo",
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "react": "^0.13.0"
+  }
+}
