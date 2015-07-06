@@ -1,11 +1,16 @@
 'use strict';
 
-var React = require('react');
+var React = require('react'),
+    SearchBar = require('./SearchBar.jsx'),
+    ProductTable = require('./ProductTable.jsx');
 
 var FilterableProductTable = React.createClass({
   render: function() {
     return (
-      <h1>Hello, world.</h1>
+      <div>
+        <SearchBar />
+        <ProductTable products={this.props.products} />
+      </div>
     );
   }
 });
