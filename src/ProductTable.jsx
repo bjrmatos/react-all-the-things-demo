@@ -10,6 +10,10 @@ var ProductTable = React.createClass({
         lastCategory = null;
 
     this.props.products.forEach(function(product) {
+      if (!product.stocked && this.props.inStockOnly) {
+        return;
+      }
+
       if (product.category !== lastCategory) {
         rows.push(
           <ProductCategoryRow category={product.category} key={product.category} />
@@ -18,7 +22,7 @@ var ProductTable = React.createClass({
 
       rows.push(<ProductRow product={product} key={product.name} />);
       lastCategory = product.category;
-    });
+    }.bind(this));
 
     return (
       <table>

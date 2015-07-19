@@ -3,6 +3,9 @@
 var React = require('react');
 
 var ProductCategoryRow = React.createClass({
+  propTypes: {
+    category: React.PropTypes.string.isRequired
+  },
   render: function() {
     return (
       <tr>
